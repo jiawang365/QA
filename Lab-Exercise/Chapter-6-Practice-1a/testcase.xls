@@ -1,0 +1,99 @@
+
+TEST CASES
+case	consumers	account	states	pairings
+1	very_important_consumers	checking	California	3
+2	businesses	savings	California	3
+3	non-profits	mortgages	California	3
+4	businesses	checking	Nevada	3
+5	very_important_consumers	savings	Nevada	3
+6	very_important_consumers	mortgages	Nevada	2
+7	non-profits	consumer_loans	Nevada	3
+8	non-profits	checking	Utah	3
+9	very_important_consumers	savings	Utah	2
+10	businesses	mortgages	Utah	3
+11	non-profits	savings	Idaho	3
+12	very_important_consumers	consumer_loans	Idaho	3
+13	businesses	commercial_loans	Idaho	3
+14	businesses	consumer_loans	Arizona	3
+15	very_important_consumers	commercial_loans	Arizona	3
+16	non-profits	checking	Arizona	2
+17	non-profits	commercial_loans	New_Mexico	3
+18	very_important_consumers	checking	New_Mexico	2
+19	businesses	savings	New_Mexico	2
+20	~very_important_consumers	consumer_loans	California	1
+21	~businesses	commercial_loans	California	1
+22	~non-profits	commercial_loans	Nevada	1
+23	~businesses	consumer_loans	Utah	1
+24	~very_important_consumers	commercial_loans	Utah	1
+25	~businesses	checking	Idaho	1
+26	~very_important_consumers	mortgages	Idaho	1
+27	~non-profits	savings	Arizona	1
+28	~businesses	mortgages	Arizona	1
+29	~non-profits	mortgages	New_Mexico	1
+30	~very_important_consumers	consumer_loans	New_Mexico	1
+
+PAIRING DETAILS
+var1	var2	value1	value2	appearances	cases
+states	account	California	checking	1	1
+states	account	California	savings	1	2
+states	account	California	mortgages	1	3
+states	account	California	consumer_loans	1	20
+states	account	California	commercial_loans	1	21
+states	account	Nevada	checking	1	4
+states	account	Nevada	savings	1	5
+states	account	Nevada	mortgages	1	6
+states	account	Nevada	consumer_loans	1	7
+states	account	Nevada	commercial_loans	1	22
+states	account	Utah	checking	1	8
+states	account	Utah	savings	1	9
+states	account	Utah	mortgages	1	10
+states	account	Utah	consumer_loans	1	23
+states	account	Utah	commercial_loans	1	24
+states	account	Idaho	checking	1	25
+states	account	Idaho	savings	1	11
+states	account	Idaho	mortgages	1	26
+states	account	Idaho	consumer_loans	1	12
+states	account	Idaho	commercial_loans	1	13
+states	account	Arizona	checking	1	16
+states	account	Arizona	savings	1	27
+states	account	Arizona	mortgages	1	28
+states	account	Arizona	consumer_loans	1	14
+states	account	Arizona	commercial_loans	1	15
+states	account	New_Mexico	checking	1	18
+states	account	New_Mexico	savings	1	19
+states	account	New_Mexico	mortgages	1	29
+states	account	New_Mexico	consumer_loans	1	30
+states	account	New_Mexico	commercial_loans	1	17
+states	consumers	California	very_important_consumers	2	1, 20
+states	consumers	California	businesses	2	2, 21
+states	consumers	California	non-profits	1	3
+states	consumers	Nevada	very_important_consumers	2	5, 6
+states	consumers	Nevada	businesses	1	4
+states	consumers	Nevada	non-profits	2	7, 22
+states	consumers	Utah	very_important_consumers	2	9, 24
+states	consumers	Utah	businesses	2	10, 23
+states	consumers	Utah	non-profits	1	8
+states	consumers	Idaho	very_important_consumers	2	12, 26
+states	consumers	Idaho	businesses	2	13, 25
+states	consumers	Idaho	non-profits	1	11
+states	consumers	Arizona	very_important_consumers	1	15
+states	consumers	Arizona	businesses	2	14, 28
+states	consumers	Arizona	non-profits	2	16, 27
+states	consumers	New_Mexico	very_important_consumers	2	18, 30
+states	consumers	New_Mexico	businesses	1	19
+states	consumers	New_Mexico	non-profits	2	17, 29
+account	consumers	checking	very_important_consumers	2	1, 18
+account	consumers	checking	businesses	2	4, 25
+account	consumers	checking	non-profits	2	8, 16
+account	consumers	savings	very_important_consumers	2	5, 9
+account	consumers	savings	businesses	2	2, 19
+account	consumers	savings	non-profits	2	11, 27
+account	consumers	mortgages	very_important_consumers	2	6, 26
+account	consumers	mortgages	businesses	2	10, 28
+account	consumers	mortgages	non-profits	2	3, 29
+account	consumers	consumer_loans	very_important_consumers	3	12, 20, 30
+account	consumers	consumer_loans	businesses	2	14, 23
+account	consumers	consumer_loans	non-profits	1	7
+account	consumers	commercial_loans	very_important_consumers	2	15, 24
+account	consumers	commercial_loans	businesses	2	13, 21
+account	consumers	commercial_loans	non-profits	2	17, 22
