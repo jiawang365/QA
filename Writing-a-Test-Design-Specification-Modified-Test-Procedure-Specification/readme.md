@@ -32,7 +32,8 @@ Then describe exactly what your TDS is going to cover. Examples include:
 •Invite with valid but mismatched Email/Confirm values => error message  
 
 •Negative: Invite with invalid/matching Email/Confirm values => error message  
-*It is important that you strive for complete testing coverage with your test cases. However, only 10 test cases are required for this TDS assignment. Thus, in order to do the minimal work for the maximal grade ;-), you should find a feature(s) for which complete coverage can be attained via only 10 test cases.  *
+
+It is *important* that you strive for complete testing coverage with your test cases. However, only 10 test cases are required for this TDS assignment. Thus, in order to do the minimal work for the maximal grade ;-), you should find a feature(s) for which complete coverage can be attained via only 10 test cases.  *
 
 
 Once your TDS is complete, write a Test Procedure Specification (TPS) for just one of the test cases specified in your TDS. I have slightly modified the TPS outline given in your book on pages 193-194 to include the input and output specifications from the Test Case Specification from page 193.   
