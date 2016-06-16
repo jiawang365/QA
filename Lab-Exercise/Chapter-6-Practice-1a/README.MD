@@ -15,7 +15,7 @@ Instructor's comments:
 Please learn how to create an output file from running a program via a command line! With Linux on a Mac, the command would be:  
 
 
-*perl allpairs.pl jiawang.txt > allpairs.output *   
+perl allpairs.pl jiawang.txt > allpairs.output   
 
 And I believe that works on Windows also if you run it from a Command window.  
 
